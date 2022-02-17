@@ -1,0 +1,100 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'titulo';
+    src: url('fontes/Folklore.otf') format('truetype');
+    font-weight: normal;
+}
+@font-face {
+    font-family: 'p';
+    src: url('fontes/sfcartoonisthand.ttf') format('opentype');
+    font-weight: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-size: 1em;
+    text-decoration: none;
+}
+
+body{
+    min-height: 100vh;
+    background-color: grey;
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+    
+}
+
+header > h1{
+    font: normal normal 6.5vw 'titulo';
+    padding: 60px 30px 0px 30px;
+
+}
+
+header > p{
+    padding: 15px 0px 60px 0px;
+    font: normal normal 1em 'arial';
+}
+
+header > p > a, footer > p > a{
+    font-weight: bold;
+    color: white;
+}
+
+header > p > a:hover, footer > p > a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    background-color: rgb(255, 255, 255);
+    font: italic 600 normal 3.2vw var(--fonte2) ;
+    color: rgba(0, 0, 0, 0.952);
+    line-height: 2em;
+}
+
+section > p{
+    padding-bottom: 20px;
+
+}
+
+section#paralax{
+    background: blaCK url('imagens/background001.jpg') bottom right fixed;
+    background-size: cover;
+}
+
+section#paralax2{
+    background: blaCK url('imagens/background002.jpg') bottom right fixed;
+    background-size: cover;
+}
+
+#paralax > p, #paralax2 > p {
+    color: white;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding: 5px;
+}
+
+footer{
+    font: normal normal 1em 'Arial';
+    background: black;
+    text-align: center;
+    padding: 10px;
+    color: white;
+}
